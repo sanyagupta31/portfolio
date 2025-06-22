@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQHjUpi94GYzxQ/profile-displayphoto-shrink_400_400/B56ZZHhby9H0Ao-/0/1744956670534?e=1756339200&v=beta&t=WHQSELZUFqbWonNEe3jeMf33s1iMu9-Uco6L1KCbbg8" alt="sanya gupta" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Om Kharche">Sanya Gupta</h1>
+
+          <p class="title">AI/ML Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sanyagupta3110@gmail.com" class="contact-link">sanyagupta3110@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 9241232398</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">31 March, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Muzaffarpur,Bihar, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+<ul class="social-list">
+
+  <!-- LinkedIn -->
+  <li class="social-item">
+    <a href="https://www.linkedin.com/in/sanya-gupta-2466052a6/" class="social-link" target="_blank">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+
+  <!-- GitHub -->
+  <li class="social-item">
+    <a href="https://github.com/sanyagupta31" class="social-link" target="_blank">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+
+  <!-- Instagram -->
+  <li class="social-item">
+    <a href="https://www.instagram.com/sanya_gupta31/?hl=en" class="social-link" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+  </li>
+
+</ul>
+
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+  I'm a Machine Learning enthusiast and Developer from Bihar, India, currently pursuing Computer Science and Data Analytics at IIT Patna.
+  I specialize in building intelligent systems using cutting-edge technologies like Generative AI, RAG, and Streamlit.
+  I enjoy turning abstract AI concepts into real-world applications that solve meaningful problems — from mental health chatbots to interview coaching platforms.
+</p>
+
+<p>
+  My work blends technical depth with creativity — I design and develop ML-powered web apps that are not only functional and accurate but also user-friendly and visually engaging.
+  Whether it's building Retrieval-Augmented Generation systems or deploying interactive UIs, I aim to make technology helpful, accessible, and impactful.
+  I've collaborated with APIs like Gemini and Wikipedia, and I'm always excited to learn, build, and grow in the AI ecosystem.
+</p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+  <h3 class="h3 service-title">What I'm Doing</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="assets\images\icon-app.svg" alt="machine learning icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Machine Learning Projects</h4>
+        <p class="service-item-text">
+          Building end-to-end ML models for real-world problems like health prediction and user behavior using Python, Scikit-learn, and Pandas.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="assets\images\icon-design.svg" alt="genai icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Generative AI + RAG Systems</h4>
+        <p class="service-item-text">
+          Creating smart applications using Google Gemini API and RAG pipelines for QA bots, mock interviews, and mental health assistants.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="assets\images\icon-dev.svg" alt="streamlit icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Interactive Web Apps</h4>
+        <p class="service-item-text">
+          Designing and deploying AI-powered web apps using Streamlit, with live feedback, secure API integration, and clean UI/UX.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="assets\images\icon-photo.svg" alt="dsa icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">DSA & Coding Challenges</h4>
+        <p class="service-item-text">
+          Solving algorithmic problems using Python & C++ to strengthen core logic and prepare for technical interviews.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+        
+
+
+        
+
+            
+      </article>
+
+
+
+
+
+      <!-- #RESUME -->
+<article class="resume" data-page="resume">
+
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- Education Section -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Indian Institute of Technology, Patna</h4>
+        <span>2023 — 2026</span>
+        <p class="timeline-text">
+          B.Sc. in Computer Science and Data Analytics. Focused on Machine Learning, Deep Learning, Data Science and Generative AI. Completed multiple industry-level projects and certifications.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">SK Mother International School, Muzaffarpur</h4>
+        <span>2021 — 2023</span>
+        <p class="timeline-text">
+          12th Grade | 72% – Core subjects: Physics, Chemistry, Mathematics. Developed early interest in coding and AI applications.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">SK Mother International School, Muzaffarpur</h4>
+        <span>2020 — 2021</span>
+        <p class="timeline-text">
+          10th Grade | 88% – Built foundation in logical reasoning and participated in science exhibitions and computer olympiads.
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- Experience Section -->
+  <section class="timeline">
+
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Experience / Projects</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">AI Interview Coach — Gemini-Powered App</h4>
+        <span>Feb 2025 — Jnue 2025</span>
+        <p class="timeline-text">
+          Built a web application to simulate AI-powered mock interviews using Google Gemini. Integrated personalized feedback, dynamic question generation, and deployed on Streamlit Cloud.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Heart Disease Prediction App</h4>
+        <span>May 2025</span>
+        <p class="timeline-text">
+          Created a data-driven logistic regression model using UCI dataset to predict heart disease. Used Streamlit to develop an interactive frontend for user input and result visualization.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Wikipedia-based QA System using RAG</h4>
+        <span>June 2025</span>
+        <p class="timeline-text">
+          Developed a full Retrieval-Augmented Generation (RAG) pipeline with FAISS and  Transformers to extract topic-specific answers using Wikipedia content.
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Anxiety Relief Chatbot using RAG & Gemini</h4>
+        <span>May 2025- June 2025</span>
+        <p class="timeline-text">
+          Designed a mental health chatbot for informative and empathetic conversations. Integrated FAISS, Gemini, and PDF chunking via pdfplumber for semantic context-based replies.
+        </p>
+      </li>
+
+    </ol>
+
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skill">
+
+    <h3 class="h3 skills-title">My Skills</h3>
+
+    <ul class="skills-list content-card">
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Python, C++, SQL</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 90%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Machine Learning & Gen AI</h5>
+          <data value="90">90%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Streamlit & Web App Dev</h5>
+          <data value="80">80%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Data Handling (Pandas, FAISS)</h5>
+          <data value="75">75%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 75%;"></div>
+        </div>
+      </li>
+
+      <li class="skills-item">
+        <div class="title-wrapper">
+          <h5 class="h5">Soft Skills</h5>
+          <data value="85">85%</data>
+        </div>
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 85%;"></div>
+        </div>
+      </li>
+
+    </ul>
+
+  </section>
+
+</article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+
+    <!-- FILTER BUTTONS -->
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+      
+    </ul>
+
+    <!-- SELECT DROPDOWN -->
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>Select category</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+        <li class="select-item"><button data-select-item>AI/ML</button></li>
+        <li class="select-item"><button data-select-item>Streamlit Apps</button></li>
+        <li class="select-item"><button data-select-item>RAG/GenAI</button></li>
+      </ul>
+    </div>
+
+    <!-- PROJECT LIST -->
+    <ul class="project-list">
+
+      <!-- 1. Interview Coach -->
+      <li class="project-item active" data-filter-item data-category="RAG/GenAI">
+        <a href="https://app-interview-coach-pxw2tcine4ajf8gbzvngvn.streamlit.app/" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\ai interview.webp" alt="AI Interview Coach" loading="lazy">
+          </figure>
+          <h3 class="project-title">AI Interview Coach</h3>
+          <p class="project-category">RAG/GenAI</p>
+        </a>
+      </li>
+
+      <!-- 2. Heart Disease Predictor -->
+      <li class="project-item active" data-filter-item data-category="AI/ML">
+        <a href="https://github.com/sanyagupta31/heart-disease-predictor.git
+" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\heart.jpg" alt="Heart Disease App" loading="lazy">
+          </figure>
+          <h3 class="project-title">Heart Disease Predictor</h3>
+          <p class="project-category">AI/ML</p>
+        </a>
+      </li>
+
+      <!-- 3. Mental Health Chatbot -->
+      <li class="project-item active" data-filter-item data-category="RAG/GenAI">
+        <a href="https://github.com/sanyagupta31/anxiety-rag-chatbot.git" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\chatbot.png" alt="Mental Health Chatbot" loading="lazy">
+          </figure>
+          <h3 class="project-title">Mental Health Chatbot</h3>
+          <p class="project-category">RAG/GenAI</p>
+        </a>
+      </li>
+
+      <!-- 4. Wikipedia RAG QA -->
+      <li class="project-item active" data-filter-item data-category="RAG/GenAI">
+        <a href=" https://github.com/sanyagupta31/Building-a-RAG-Pipeline-for-LLMs " target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\wikepedia.jpg" alt="Wikipedia QA" loading="lazy">
+          </figure>
+          <h3 class="project-title">Wikipedia QA with RAG</h3>
+          <p class="project-category">RAG/GenAI</p>
+        </a>
+      </li>
+
+      <!-- 5. Netflix Data Dashboard -->
+      <li class="project-item active" data-filter-item data-category="Streamlit Apps">
+        <a href="https://github.com/sanyagupta31/Netflix" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\netflix.png" alt="Netflix Dashboard" loading="lazy">
+          </figure>
+          <h3 class="project-title">Netflix EDA Dashboard</h3>
+          <p class="project-category">Machine Learning (TF-IDF + Cosine Similarity).</p>
+        </a>
+      </li>
+
+      <!-- 6. Wine Dataset Visualization -->
+      <li class="project-item active" data-filter-item data-category="AI/ML">
+        <a href="https://github.com/sanyagupta31/-AI-Story-Generator" target="_blank">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="assets\images\images.jpg" alt="Wine Dataset App" loading="lazy">
+          </figure>
+          <h3 class="project-title">Story Generator</h3>
+          <p class="project-category">OpenAI’s GPT-2 model and Gradio</p>
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+</article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+  <header>
+    <h2 class="h2 article-title">Blog</h2>
+  </header>
+
+  <section class="blog-posts">
+
+    <ul class="blog-posts-list">
+
+      <!-- Blog 1 -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@sanyagupta3110/building-generative-ai-apps-with-gemini-and-streamlit-on-vertex-ai-fd41751b14ca" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*tr-xplGNGzbubuB4" alt="GenAI Interview Coach" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">GenAI</p>
+              <span class="dot"></span>
+              <time datetime="2025-06-20">Apr 17, 2025</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Develop GenAI Apps with Gemini and Streamlit</h3>
+
+            <p class="blog-text">
+              I completed an exciting hands-on lab titled “Develop GenAI Apps with Gemini and Streamlit”, powered by Google Cloud.
+            </p>
+          </div>
+
+        </a>
+      </li>
+
+      <!-- Blog 2 -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@sanyagupta3110/explore-generative-ai-with-the-gemini-api-in-vertex-ai-588f8630a826" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*euz7HYN9IbBb3nknlTKxIw.png" alt="Netflix Dashboard" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Vertex AI</p>
+              <span class="dot"></span>
+              <time datetime="2025-05-10">
+Apr 15, 2025</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Explore Generative AI with the Gemini API in Vertex AI</h3>
+
+            <p class="blog-text">
+              I got hands-on experience with Google Cloud’s Vertex AI and its powerful Gemini API, and I’m excited to share my learning journey through this blog. 
+            </p>
+          </div>
+
+        </a>
+      </li>
+
+      <!-- Blog 3 -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@sanyagupta3110/inspect-rich-documents-with-gemini-multimodality-and-multimodal-rag-on-google-cloud-5d914cbe1e7c" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*noRBNbPfw9qpj12c052_rA.png" alt="Python Tips" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">RAG</p>
+              <span class="dot"></span>
+              <time datetime="2025-04-05">Apr 15, 2025</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Inspect Rich Documents with Gemini: Multimodality and Multimodal RAG on Google Cloud</h3>
+
+            <p class="blog-text">
+             I earned a badge from Google Cloud after completing the “Inspect Rich Documents with Gemini Multimodality and Multimodal RAG” course.
+          </div>
+
+        </a>
+      </li>
+
+      <!-- Blog 4 -->
+      <li class="blog-post-item">
+        <a href="https://medium.com/@sanyagupta3110/build-real-world-ai-applications-with-gemini-and-imagen-78632fa13bee" target="_blank">
+
+          <figure class="blog-banner-box">
+            <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*aLEUSHraRsI2KaHz" alt="Wine Dataset ML" loading="lazy">
+          </figure>
+
+          <div class="blog-content">
+            <div class="blog-meta">
+              <p class="blog-category">Gemini</p>
+              <span class="dot"></span>
+              <time datetime="2025-03-28">Apr 10, 2025</time>
+            </div>
+
+            <h3 class="h3 blog-item-title">Build Real World AI Applications with Gemini and Imagen</h3>
+
+            <p class="blog-text">
+              The world of AI is rapidly evolving, and Google Cloud’s Vertex AI is at the center of it all — empowering developers to create intelligent, multimodal, and production-ready applications.
+            </p>
+          </div>
+
+        </a>
+      </li>
+
+    </ul>
+
+  </section>
+
+</article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+    <figure>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28625.03993973679!2d85.3785952176896!3d26.119682499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10fa3aba7289%3A0x3918654406577d82!2sMotijheel%20Rd%2C%20Sutapatti%2C%20Pokhraira%2C%20Muzaffarpur%2C%20Bihar%20842001!5e0!3m2!1sen!2sin!4v1719057855501!5m2!1sen!2sin"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </figure>
+  </section>
+
+<section class="contact-form">
+    <h3 class="h3 form-title">Send Me a Message</h3>
+
+    <form action="mailto:sanya@example.com" method="POST" class="form" enctype="text/plain">
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+      </div>
+
+      <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+      <button class="form-btn" type="submit">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send</span>
+      </button>
+    </form>
+  </section>
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
